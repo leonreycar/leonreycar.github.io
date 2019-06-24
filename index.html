@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portafolio Reycar L.</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
 </head>
 <body>
     <header>
@@ -52,7 +56,7 @@
                             <img src="img/icono33.png" alt="" class="imagen-tarjeta">
                             <div class="contenido-tarjeta">
                                 <h3 class="titulo-tarjeta">Proyectos.</h3>
-                                <p class="parrafo-tarjeta">Actualmente estoy en el proceso de construcción de una Sistema de Gestión Estudiantil para veneficiar a la escuela "Samuel Robinson" hubicada en Ciudad Caribia, con el fin de tener un control de los datos estudiantiles para faciliatar el manejo de los mismos en el departamento de control estudiantil de esa institución .</p>
+                                <p class="parrafo-tarjeta">Actualmente estoy en el proceso de construcción de una Sistema de Gestión Estudiantil para beneficiar a la escuela "Samuel Robinson" ubicada en Ciudad Caribia, con el fin de tener un control de los datos estudiantiles para facilitar el manejo de los mismos en el departamento de control estudiantil de esa institución.</p>
                             </div>
                     </div>
                 </div>
@@ -61,28 +65,115 @@
         <section class="portafolio">
             <div class="contenedor">
                 <div class="portafolio-textos">
-                    <h2>Galería de imagenes de mi proyecto actual</h2>
-                    <p>contáctame para mas información</p>
+                    
+                    <p>Imagenes del Sistema actual en proceso de desarrollo</p>
+                <div class="wrapper">
+
+                <ul id="sb-slider" class="sb-slider">
+                    <li>
+                        <a href="#" target="_blank"><img src="img/foto1.png" alt="image1"/></a>
+                        <div class="sb-description">
+                            <h3>login de acceso al sitema.</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="img/foto2.png" alt="image1"/></a>
+                        <div class="sb-description">
+                            <h3>pantalla principal</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="img/foto3.png" alt="image1"/></a>
+                        <div class="sb-description">
+                            <h3>Registro y consulta de estudiantes</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="img/foto4.png" alt="image1"/></a>
+                        <div class="sb-description">
+                            <h3>Registro y control de cursos</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="img/foto5.png" alt="image1"/></a>
+                        <div class="sb-description">
+                            <h3>Administrador de Usuarios</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="img/foto6.png" alt="image1"/></a>
+                        <div class="sb-description">
+                            <h3>Cambiar Contraseña</h3>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+                <div id="shadow" class="shadow"></div>
+
+                <div id="nav-arrows" class="nav-arrows">
+                    <a href="#">Next</a>
+                    <a href="#">Previous</a>
                 </div>
-                <section class="galeria">
-                    <div class="fotos">
-                        <img src="img/inicio.png" alt="">
-                    </div>
-                     <div class="fotos">
-                        <img src="img/menu.png" alt="">
-                    </div>
-                    <div class="fotos">
-                        <img src="img/registro.png" alt="">
-                    </div>
-                    <div class="fotos">
-                        <img src="img/curso.png" alt="">
-                    </div>
-                    <div class="fotos">
-                        <img src="img/usuario.png" alt="">
-                    </div>
-                    <div class="fotos">
-                        <img src="img/git.png" alt="">
-                    </div>
+
+            </div><!-- /wrapper -->
+            
+
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                
+                var Page = (function() {
+
+                    var $navArrows = $( '#nav-arrows' ).hide(),
+                        $shadow = $( '#shadow' ).hide(),
+                        slicebox = $( '#sb-slider' ).slicebox( {
+                            onReady : function() {
+
+                                $navArrows.show();
+                                $shadow.show();
+
+                            },
+                            orientation : 'r',
+                            cuboidsRandom : true
+                        } ),
+                        
+                        init = function() {
+
+                            initEvents();
+                            
+                        },
+                        initEvents = function() {
+
+                            // add navigation events
+                            $navArrows.children( ':first' ).on( 'click', function() {
+
+                                slicebox.next();
+                                return false;
+
+                            } );
+
+                            $navArrows.children( ':last' ).on( 'click', function() {
+                                
+                                slicebox.previous();
+                                return false;
+
+                            } );
+
+                        };
+
+                        return { init : init };
+
+                })();
+
+                Page.init();
+
+            });
+        </script>
+        
+
                     
                 
                 </section>
@@ -97,14 +188,14 @@
                     
                       <fooder>
                       <div class="vcard">
-                     <p>Teléfonos: <a class="tel" href="tel:0424 295 41 21/0416 303 54 27">0424 295 41 21 - 0416 303 54 27</a></p>
+                     <p>Dirección: <a></a></p>
                        <p><span class="street-address">Carretera Panamericana</span>, <span class="extended-address">Km II.</span> <br>
                        <span class="postal-code">Sector</span> <span class="region">Coche</span><br>
                        <span class="locality">Caracas Dtto.Capital</span><br>
                       <span class="country-name">Venezuela</span></p>
                       <p><a class="email" href="mailto:leonreyar@gmail.com">leonreycar@gmail.com</a></p>
                      </div>
-<!-- otras cosas en el footer -->
+
                       </fooder>
                 </form>
             </div>
