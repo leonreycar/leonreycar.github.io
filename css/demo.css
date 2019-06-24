@@ -1,6 +1,6 @@
 
 /*Empieza estilos utilizados solo para el demo*/
-,
+*,
 *:after,
 *:before {
 	-webkit-box-sizing: border-box;
@@ -10,7 +10,7 @@
 	margin: 0;
 }
 
- Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:after {
 	content: "";
 	display: table;
@@ -22,7 +22,7 @@ body {
 	background: #e4ebe9 url(../images/fancy_deboss.png) repeat top left;
 	color: #444;
 	font-family: "PT Sans Narrow", Arial, sans-serif;
-	font-size: 13px;
+	font-size: 20px;
 	font-weight: 400;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -32,7 +32,7 @@ body {
 a {
 	color: #000;
 	text-decoration: none;
-}*/
+}
 
 h1, h2, h5 {
 	margin: 20px 20px 30px 20px;
@@ -41,21 +41,21 @@ h1, h2, h5 {
 	font-family: "Volkhov", serif;
 	text-align: center;
 	font-weight: 700;
-	text-shadow: 1px 1px 3px #e0d1bc;
+	text-shadow: 1px 1px 3px #EBC52E;
 }
 
 h1 span, h5 {
 	font-size: 18px;
 	display: block;
 	font-style: italic;
-	color: #997f5a;
+	color: #75995A;
 	font-weight: 400;
 	text-shadow: 0px 1px 1px #fff;
 }
 p.info {
 	font-family: "Volkhov", serif;
 	font-style: italic;
-	color: #997f5a;
+	color: #75995A;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 	padding: 20px;
 	display: block;
